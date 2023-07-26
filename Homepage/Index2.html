@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+</style>
+<body style="background-image: url(background.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div style="color: aliceblue; font-size: 50px;text-align: center;">Login</div>
+    <form action="/action_page.php" method="post">
+        <div class="container">
+          <div style="display: flex;flex-direction: column;width: 550px;margin-bottom: 25px;">
+            <label for="uname"><b style="color: white;">Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" >
+          </div>
+          <div style="margin-bottom: 25px;">
+            <label for="psw"><b style="color: white;">Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" >   
+          </div>
+          <div class="psw" style="display: flex;justify-content: end;margin-bottom: 10px;"><a href="#" style="text-decoration: none;margin-right: 15px;color: white;">Forgot password?</a></div>
+        </form>
+        <div style="display: flex;justify-content: center;">
+          <a href="Index3.html" style="text-decoration: none;cursor: pointer;">
+            <div>
+              <button type="button" style="width: 130px;color: white;">Login</button>
+            </div>
+          </a>
+        </div>
+</body>
+</html>

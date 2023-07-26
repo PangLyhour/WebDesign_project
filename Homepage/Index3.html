@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+span.psw {
+  float: right;
+  padding-top: 16px; 
+}
+.container input{
+  background-color: #D9D9D9;
+}
+
+.container input::placeholder{
+ color: #B39494; 
+}
+
+</style>
+<body style="background-image: url(background.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div style="width: auto; text-align: center;padding: 1px;">
+        <img src="Profile.png" style="width: 105px;">
+    </div>
+    <form action="/action_page.php" method="post">
+        <div class="container" style="display: flex;flex-direction: column;gap: 10px;width: 450px;">
+          <input type="text" placeholder="Profile Details" name="uname" required>
+          <input type="text" placeholder="Addresses" name="psw" required>
+          <div style="display: flex;justify-content: end;">
+            <a href="Index1.html"><button type="button" style="margin-top: 25px;width: 70px;">EXIT</button></a>
+          </div>   
+        </div>
+    </form>   
+</body>
+</html>
